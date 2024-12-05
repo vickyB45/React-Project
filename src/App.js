@@ -91,7 +91,8 @@ import "./App.css"
 const App = ()=>{
     const [color,setColor]=useState('black')
     return(
-        <div className="container" style={{backgroundColor:color}}>
+        <div className="container" style={{backgroundColor:color,color:'white',paddingTop:'10px'}}>
+        <h3 style={{textAlign:"center"}}>Choose any color Tamplate</h3>
             <div className="fixed">
                 <div className="button-container">
                     <button onClick={()=>setColor('red')} style={{background:"red"}}>Red</button>
@@ -102,7 +103,7 @@ const App = ()=>{
                     <button onClick={()=>setColor('purple')} style={{background:"purple"}}>Purple</button>
                     <button onClick={()=>setColor('orange')} style={{background:"orange"}}>Orange</button>
                     <button onClick={()=>setColor('aqua')} style={{background:"aqua"}}>Aqua</button>
-                    <button onClick={()=>setColor('white')} style={{background:"white"}}>White</button>
+                    <button onClick={()=>setColor('gold')} style={{background:"gold"}}>Gold</button>
                     <button onClick={()=>setColor('brown')} style={{background:"brown"}}>Brown</button>
                     <button onClick={()=>setColor('cadetblue')} style={{background:"cadetblue"}}>Cadetblue</button>
                     <button onClick={()=>setColor('coral')} style={{background:"coral"}}>Coral</button>
